@@ -1,0 +1,16 @@
+services:
+  localpaste:
+    build: .
+    image: outwiles-localpaste:latest
+    container_name: outwiles-localpaste
+    restart: unless-stopped
+    ports:
+      # Host:Container — change the host side if 8420 is already in use.
+      - "8420:8420"
+    environment:
+      - PORT=8420
+      - HOST=0.0.0.0
+      - DATA_DIR=/app/data
+      # - MAX_PASTE_SIZE=2097152
+    volumes:
+      - ./data:/app/data

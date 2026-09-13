@@ -1,0 +1,19 @@
+{
+  "name": "outwiles-localpaste",
+  "version": "1.0.0",
+  "description": "Outwiles LocalPaste — a self-hosted, local-first Pastebin for developers.",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node server/server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {},
+  "keywords": ["pastebin", "local-first", "self-hosted", "lan", "privacy"],
+  "author": "Aashu"
+}
